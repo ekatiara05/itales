@@ -1,0 +1,17 @@
+.logbook-media-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.logbook-media-gallery img,
+.logbook-media-gallery video {
+    display: block;
+    width: 100%;
+    max-height: 260px;
+    border: 1px solid #e8dfd5;
+    border-radius: 10px;
+    background: #f6f1ea;
+    object-fit: contain;
+}

@@ -1,0 +1,112 @@
+.teacher-settings {
+    max-width: 1040px;
+}
+
+.teacher-settings-intro {
+    color: #8c7f75;
+    margin: -0.25rem 0 1.5rem;
+}
+
+.teacher-settings-card {
+    background: #fff;
+    border: 1px solid #e8dfd5;
+    border-radius: 18px;
+    box-shadow: 0 8px 26px rgba(74, 56, 45, 0.06);
+    margin-bottom: 1.25rem;
+    padding: 1.5rem;
+}
+
+.teacher-settings-card-heading {
+    align-items: center;
+    display: flex;
+    gap: 0.9rem;
+    margin-bottom: 1.25rem;
+}
+
+.teacher-settings-icon {
+    align-items: center;
+    background: #f6f1ea;
+    border-radius: 12px;
+    color: #805538;
+    display: flex;
+    flex: 0 0 42px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    height: 42px;
+    justify-content: center;
+}
+
+.teacher-settings-card h2 {
+    color: #4a382d;
+    font-size: 1.05rem;
+    margin: 0 0 0.25rem;
+}
+
+.teacher-settings-card p {
+    color: #8c7f75;
+    font-size: 0.88rem;
+    margin: 0;
+}
+
+.teacher-settings-form {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.teacher-settings-form label {
+    color: #5f4b3e;
+    display: grid;
+    font-size: 0.88rem;
+    font-weight: 700;
+    gap: 0.45rem;
+}
+
+.teacher-settings-form input {
+    background: #fff;
+    border: 1px solid #ded2c6;
+    border-radius: 10px;
+    color: #3e342e;
+    font: inherit;
+    font-weight: 400;
+    min-height: 44px;
+    padding: 0 0.8rem;
+    width: 100%;
+}
+
+.teacher-settings-form input:focus {
+    border-color: #805538;
+    box-shadow: 0 0 0 3px rgba(128, 85, 56, 0.12);
+    outline: none;
+}
+
+.teacher-settings-form button {
+    background: #805538;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 700;
+    min-height: 44px;
+    padding: 0.65rem 1.15rem;
+    grid-column: 1 / -1;
+    justify-self: end;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.teacher-settings-form button:hover {
+    background: #5f3f2c;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+    .teacher-settings-card {
+        padding: 1.1rem;
+    }
+
+    .teacher-settings-form {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}

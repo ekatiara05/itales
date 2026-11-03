@@ -1,0 +1,190 @@
+.guru-dashboard .guru-welcome-card {
+    position: relative;
+    padding: 1.8rem 2rem;
+    border: 0;
+    border-radius: 18px;
+    background: linear-gradient(110deg, #71472f, #8b5c3c);
+    box-shadow: 0 8px 20px rgba(95, 63, 44, 0.12);
+}
+
+.guru-dashboard .guru-date-tag {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.guru-dashboard .guru-welcome-title {
+    color: #fff;
+    font-size: clamp(1.6rem, 2.7vw, 2.1rem);
+}
+
+.guru-dashboard .guru-welcome-subtitle {
+    margin-bottom: 1.1rem;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.guru-dashboard .btn-add-logbook-hero {
+    padding: 0.7rem 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    background: rgba(61, 38, 23, 0.26);
+    box-shadow: none;
+}
+
+.guru-dashboard .btn-add-logbook-hero:hover {
+    background: rgba(61, 38, 23, 0.48);
+}
+
+.guru-date-card {
+    display: flex;
+    min-width: 190px;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 14px;
+    background: rgba(55, 34, 21, 0.24);
+    color: #fff;
+}
+
+.guru-date-icon {
+    display: flex;
+    align-items: center;
+}
+
+.guru-date-card > span:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.guru-date-card small {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.78rem;
+}
+
+.guru-date-card strong {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.guru-dashboard .logbook-summary-panel {
+    margin-bottom: 24px;
+    padding: 22px 24px 24px;
+}
+
+.guru-dashboard .panel-tag {
+    margin-bottom: 16px;
+}
+
+.guru-dashboard .guru-summary-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.guru-dashboard .guru-summary-grid .logbook-card {
+    min-height: 122px;
+    padding: 16px 18px;
+    border-radius: 16px;
+}
+
+.guru-dashboard .guru-summary-grid .logbook-card-total {
+    border-color: #805538;
+    background: #805538;
+}
+
+.guru-dashboard .logbook-recent-card {
+    padding: 1.6rem 1.8rem;
+    border-color: #eadfd6;
+    border-radius: 20px;
+    box-shadow: 0 4px 18px rgba(95, 63, 44, 0.035);
+}
+
+.guru-dashboard .recent-header-row {
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.guru-dashboard .recent-header-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.guru-dashboard .logbook-item-row {
+    gap: 16px;
+    padding: 1rem 0;
+}
+
+.guru-dashboard .student-meta-left {
+    min-width: 220px;
+}
+
+.guru-dashboard .student-avatar-circle {
+    width: 52px;
+    height: 52px;
+    border: 0;
+    border-radius: 15px;
+    background: #e8f0e7;
+    color: #3b1d0d;
+}
+
+.guru-dashboard .logbook-action-right {
+    flex: 0 0 auto;
+}
+
+.guru-dashboard .recent-empty {
+    padding: 30px 16px;
+    color: #786b61;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .guru-dashboard .guru-summary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .guru-dashboard .guru-welcome-card {
+        padding: 1.5rem;
+    }
+
+    .guru-date-card {
+        width: 100%;
+    }
+
+    .guru-dashboard .guru-summary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .guru-dashboard .dashboard-content {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .guru-dashboard .logbook-recent-card {
+        padding: 1.2rem;
+    }
+
+    .guru-dashboard .logbook-item-row {
+        align-items: flex-start;
+    }
+
+    .guru-dashboard .logbook-activity-center {
+        min-width: 100%;
+        padding-left: 66px;
+    }
+
+    .guru-dashboard .logbook-action-right {
+        margin-left: 66px;
+    }
+}
+
+@media (max-width: 520px) {
+    .guru-dashboard .guru-summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .guru-dashboard .recent-header-row {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
